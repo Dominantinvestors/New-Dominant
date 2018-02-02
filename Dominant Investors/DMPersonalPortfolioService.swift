@@ -158,7 +158,7 @@ class DMPersonalPortfolioService: NSObject, UITableViewDataSource, UITableViewDe
     private func getStocksList() -> [String] {
         var stocksArray = [String]()
         for stock in self.portfolios {
-            stocksArray.append(stock.ticker!)
+            stocksArray.append("AAPL")
         }
         
         return stocksArray
@@ -239,7 +239,7 @@ class DMPersonalPortfolioService: NSObject, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "DMStockCell") as! DMStockCell
         let personalStock = portfolios[indexPath.row]
         
-        if let stockData = self.stocksData[personalStock.ticker!] {
+        if let stockData = self.stocksData["AAPL"] {
             cell.setupWithPersonal(stock: personalStock, data : stockData)
         }
         cell.delegate = self

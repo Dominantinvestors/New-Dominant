@@ -29,8 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         QBSettings.setLogLevel(.nothing)
         QBSettings.setApplicationID(43580)
-        QBSettings.setAuthKey("mZRSuKfYFRDMcDh")
-        QBSettings.setAuthSecret("QvTVdQu6SutrykF")
+        QBSettings.setAuthKey("EkjcOMVnBHDgkEQ")
+        QBSettings.setAuthSecret("BujTrvzdmLkcPS5")
         QBSettings.setAccountKey("sjmhZ3S3rwN8bCF89Eww")
         
         return true
